@@ -1,70 +1,62 @@
-* {
+*{
     margin: 0;
     padding: 0;
-}
-
-body{
-    background-color: #548687;
     text-align: center;
 }
+h1{
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+}
+.choices{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 
-.container{
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.game{
-  height: 60vmin;
-  width: 60vmin;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5vmin;
-}
-.box{
-    height: 18vmin;
-    width: 18vmin;
+.choice{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    margin-top: 5rem;
+    display: flex;
     justify-content: center;
-    border-radius: 1rem;
-    border: none;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
-    font-size: 9vmin;
-    color: #b0413e;
-    background-color: #ffffc7e6;
+    align-items: center;
+}
+.choice:hover{
+    cursor:pointer;
+    background-color: #081b31;
+}
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+.score-board{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 5rem;
+}
 
-}
-#reset-btn{
-    padding: 1rem;
-    font-size: 1.25rem;
-    background-color: #191913;
-    color: #fff;
-    border-radius: 1rem;
-    border: none;
-}
+#user-score, #comp-score{
+    font-size: 5rem;
 
-#new-btn {
-    padding: 1rem;
-    font-size: 1.25rem;
-    background-color: #191913;
-    color: #fff;
-    border-radius: 1rem;
-    border: none;
-}
-#msg{
-    color:#ffffc7 ;
-    font-size: 5vmin;
 }
 .msg-container{
-   height: 80vmin;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   gap: 5rem;
-
+    margin-top: 5rem;
 }
-.hide{
-    display: none;
+#msg{
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
 }
